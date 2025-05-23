@@ -5,45 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Font Awesome library css file-->
     <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>MP3 Player</title>
   </head>
   <body>
     <div class="container">
-      <div class="mp3-title">
+      <div class="mp3-title flex">
         <div class="hide"><i class="fa-solid fa-angle-down"></i></div>
-        <h3>now playing</h3>
+        <h4>now playing</h4>
         <div class="more"><i class="fa-solid fa-list"></i></div>
       </div>
       <div class="images">
         <img src="" alt="images" />
       </div>
       <div class="mp3-name">
-        <span>frist song</span>
-        <span>frist singer</span>
+        <div class="song">frist song</div>
+        <div class="singer">frist singer</div>
       </div>
       <div class="mp3-bar">
-        <span class="bar-progres"></span>
+        <div class="bar-progres"></div>
       </div>
-      <div class="mp3-time">
+      <div class="mp3-time flex">
         <span>00:00</span>
         <span>00:00</span>
       </div>
-      <div class="mp3-control">
+      <div class="mp3-control flex">
         <div class="change">
-          <i class="fa-solid fa-rotate-right"></i>
-          <i class="fa-solid fa-shuffle"></i>
-          <i class="fa-solid fa-repeat"></i>
+          <i class="fa-solid fa-rotate-right change-icon"></i>
+          <!-- <i class="fa-solid fa-shuffle change-icon"></i>
+          <i class="fa-solid fa-repeat change-icon"></i> -->
         </div>
         <div class="previous"><i class="fa-solid fa-backward-step"></i></div>
         <div class="pause">
-          <i class="fa-solid fa-circle-pause"></i>
+          <!-- <i class="fa-solid fa-circle-pause"></i> -->
           <i class="fa-solid fa-circle-play"></i>
         </div>
         <div class="next"><i class="fa-solid fa-forward-step"></i></div>
-        <div class="list-more"><i class="fa-regular fa-heart"></i></div>
+        <div class="favrit">
+          <i class="fa-regular fa-heart favrit-icon"></i>
+        </div>
       </div>
     </div>
     <!--Font Awesome library js file-->
     <script src="js/all.min.js"></script>
+    <!--list of songs js file-->
+    <script src="js/list.js"></script>
+    <!--main js file-->
+    <script src="js/main.js"></script>
   </body>
 </html>
